@@ -1,0 +1,14 @@
+.title {
+    text-align: center;
+    color: black;
+}
+
+.CumulativeBar {
+    width: 60%;
+}
+
+.justify-center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

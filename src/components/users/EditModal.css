@@ -1,0 +1,27 @@
+/* The Modal (background) */
+.modal {
+    display: flex; /* Hidden by default */
+    z-index: 5; /* Sit on top */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    justify-content: center;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    text-align: center;
+    padding: 20px;
+    width: 100%; /* Could be more or less, depending on screen size */
+  }
+
+  h1 {
+      color: black;
+  }
+  
+  /* The Close Button */
+  .close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }

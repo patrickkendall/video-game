@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+import React, { Fragment, useState } from "react"
+
 import './App.css';
 
+import ListUsers from './components/users/ListUsers'
+import InputUser from "./components/users/InputUser"
+import EditModal from "./components/users/EditModal"
+import GenderScore from "./components/users/GenderScore"
+import CumulativeScore from "./components/users/CumulativeScore"
+
 function App() {
+
+  const [visibility, setVisibility] = useState("hidden")
+
+  const setModalVisibility = () => {
+    if (visibility === "hidden") {
+      setVisibility("visible")
+    }
+    else {
+      setVisibility("hidden");
+    }
+  }
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <InputUser />
+        <CumulativeScore />
+        <ListUsers />
+        <EditModal visibility={visibility} className="modal"/>
+        <GenderScore />
     </div>
   );
 }
