@@ -26,7 +26,7 @@ class CumulativeScore extends React.Component {
             }
         }
         try {
-            const response = await fetch("http://localhost:5000/users") 
+            const response = await fetch("https://video-game-987654321.herokuapp.com/users") 
             const jsonData = await response.json()
             users = jsonData.Items
             scoreData = users;

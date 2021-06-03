@@ -12,7 +12,7 @@ const EditUser = ({ user }) => {
     try {
       const body = { user };
       const response = await fetch(
-        `http://localhost:5000/users/`,
+        `https://video-game-987654321.herokuapp.com/users`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },

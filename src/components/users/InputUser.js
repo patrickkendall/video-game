@@ -17,7 +17,7 @@ const InputUser = () => {
             const body = { last_name, first_name, age, score, email_id, gender };
             console.log(body);
             const response = await fetch(
-                "http://localhost:5000/users", {
+                "https://video-game-987654321.herokuapp.com/users", {
                 method: "POST",
                 headers: { "Content-Type": "application/json"},
                 body: JSON.stringify(body)

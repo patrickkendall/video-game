@@ -14,7 +14,7 @@ const ListUsers = () => {
     const getUsers = async () => {
         try {
 
-            const response = await fetch("http://localhost:5000/users") 
+            const response = await fetch("https://video-game-987654321.herokuapp.com/users") 
             const jsonData = await response.json()
 
             setUsers(jsonData.Items)
@@ -28,7 +28,7 @@ const ListUsers = () => {
         var id = { email_id }
         console.log(email_id)
         try {
-            const deleteUser = await fetch(`http://localhost:5000/users`, {
+            const deleteUser = await fetch(`https://video-game-987654321.herokuapp.com/users`, {
                 headers: { "Content-Type": "application/json"},
                 method: "DELETE",
                 body:JSON.stringify(id)
