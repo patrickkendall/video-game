@@ -15,7 +15,7 @@ const EditModal = () => {
         try {
           const body = { last_name, first_name, age, score, email_id, gender };
           const response = await fetch(
-            `http://localhost:5000/users`,
+            `https://video-game-987654321.herokuapp.com/users`,
             {
               method: "PUT",
               headers: { "Content-Type": "application/json" },
